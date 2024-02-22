@@ -1,0 +1,39 @@
+<script>
+//Se tiene el nombre, código del producto, el total de las ventas de un vendedor. 
+//Calcule su comisión teniendo en cuenta que si el producto es de: 
+//Código 1 esta es del 5%, Código 2 esta es del 8%, Código 3 esta es del 3%.
+// Imprima el nombre y la comisión.
+
+var nombre;
+var codigo;
+var total ;
+var comision;
+var porcentaje;
+
+nombre = prompt("ingrese el nombre del vendedor");
+codigo = parseInt(prompt("ingrese el codigo"));
+total = parseInt(prompt("ingrese el total de ventas" ));
+
+if (codigo == 1){
+    comision = total * 0.05;
+}else if (codigo == 2){
+    comision = total * 0.08;
+}else if (codigo == 3){
+    comision = total * 0.03;
+
+}else {
+    comision = 0;
+}
+
+document.write("El vendedor ", nombre , " tiene una comisión de ", comision);
+
+
+
+
+
+
+
+
+
+
+</script>

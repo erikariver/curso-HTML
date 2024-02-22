@@ -1,0 +1,48 @@
+<script>
+    // Se desea seleccionar un atleta para una marató
+    // internacional, para seleccionarlo este debe 
+    //haber terminado el maratón anterior, en un tiempo determinado. 
+    //Los tiempos son 150 minutos para hombres
+    // menores de 40 años; 175 minutos para hombres 
+    //con una edad mayor o igual a 40 años 
+    //y 180 minutos para mujeres.
+    // Los datos a introducir (leer) son: Sexo, 
+    //Edad y tiempo efectuado en su maratón anterior.
+
+    var sexo;
+    var edad;
+    var tiempo;
+
+  
+    edad = parseInt(prompt("escriba la edad"));
+    tiempo = parseInt(prompt("escribir el tiempo (minutos)"));  
+    sexo = prompt("escriba el genero (F o M)");
+
+    if (sexo == 'M') {
+        if (edad >= 40){
+            if (tiempo <= 175){
+                document.writeln("El Atleta es aceptado para participar.");
+            }else{
+                document.writeln("El Atleta NO es aceptado para participar.");
+            }
+        }else{
+            if (tiempo <= 150){
+                document.writeln("El Atleta es aceptado para participar.");
+            }else{
+                document.writeln("El Atleta NO es aceptado para participar.");
+            }
+        }
+    } else if (sexo == 'F') {
+        if (tiempo <= 180){
+                document.writeln("El Atleta es aceptado para participar.");
+            }else{
+                document.writeln("El Atleta NO es aceptado para participar.");
+            }
+    } else {
+        document.writeln("Error en el genero ingresado. Vuelva a intentar");
+    }
+
+
+
+
+</script>

@@ -1,0 +1,25 @@
+<script>
+    var horas=0;
+    var minutos=0;
+    var segundos=0;
+
+    horas=parseInt(prompt("introduzca hora",0));
+    minutos=parseInt(prompt("introduzca minutos",0));
+    segundos=parseInt(prompt("introduzca segumdos",0));
+
+    var convertirhoras;
+    convertirhoras = horas + minutos/60 + segundos/3600;
+
+    var convertirminutos;
+    convertirminutos = minutos + segundos*60 + horas/60;
+
+    var convertirsegundos;
+    convertirsegundos = segundos + horas/60 + minutos*3600;
+
+  document.writeln("tiempo total es: resultado1= horas, resultado2=minutos, resultado3=segundos)
+  </script>
+
+
+
+
+

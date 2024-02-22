@@ -1,0 +1,36 @@
+<script>
+
+//Una empresa desea calcular la comisión que le deben pagar 
+//a cada uno de los vendedores, al vendedor le corresponde 
+//el 2.5 % de la comisión, sobre aquellos artículos cuyos precios sean 
+//inferiores a $100.000 y el 75 % cuyo precio sea de $100.000 o más. 
+//El programa debe ser flexible para n vendedores.
+
+document.writeln("Erika Rivera","<br>");
+var n;
+var ventasmenores; 
+var ventasmayores;
+var comision 
+n=parseInt(prompt("escriba el numero de vendedores"));
+for (var i=1; i <=n; i++){
+
+    document.writeln("vendedor", i, "<br><br>");
+    ventasmenores = parseInt(prompt("ingrese el total de ventasmenores a 100.000"));
+    ventasmayores = parseInt(prompt("ingrese el total de ventasmayores a 100.000"));
+
+    comision= (ventasmenores * 2.5/100)+(ventasmayores * 75/100);
+    
+
+    document.writeln("comision = " , comision,  "<br>");
+
+
+
+}
+
+          
+
+          
+
+
+
+</script>
